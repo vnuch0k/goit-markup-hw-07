@@ -64,13 +64,13 @@
       </div>
     </header>
     <main>
-      <section class="hero overlay">
+      <section class="hero hero__overlay">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button data-modal-open type="button" class="button-hero">
+          <button data-modal-open type="button" class="hero__button">
             Заказать услугу
           </button>
           <div class="backdrop is-hidden" data-modal>
@@ -80,58 +80,60 @@
                   Оставьте свои данные, мы вам перезвоним
                 </p>
                 <form class="modal-form">
-                  <div class="form-field">
-                    <label for="name" class="form-label">Имя</label>
+                  <div class="modal-form__field">
+                    <label for="name" class="modal-form__label">Имя</label>
                     <input
-                      class="form-input"
+                      class="modal-form__input"
                       type="text"
                       name="name"
                       id="name"
                       placeholder=" "
                     />
-                    <svg class="icon-modal" width="18" height="18">
+                    <svg class="modal-form__icon" width="18" height="18">
                       <use
                         href="./images/symbol-defs.svg#icon-person-black-form"
                       ></use>
                     </svg>
                   </div>
 
-                  <div class="form-field">
-                    <label for="tel" class="form-label">Телефон</label>
+                  <div class="modal-form__field">
+                    <label for="tel" class="modal-form__label">Телефон</label>
                     <input
-                      class="form-input"
+                      class="modal-form__input"
                       type="tel"
                       name="tel"
                       id="tel"
                       placeholder=" "
                     />
-                    <svg class="icon-modal" width="18" height="18">
+                    <svg class="modal-form__icon" width="18" height="18">
                       <use
                         href="./images/symbol-defs.svg#icon-phone-form"
                       ></use>
                     </svg>
                   </div>
 
-                  <div class="form-field">
-                    <label for="email" class="form-label">Почта</label>
+                  <div class="modal-form__field">
+                    <label for="email" class="modal-form__label">Почта</label>
                     <input
-                      class="form-input"
+                      class="modal-form__input"
                       type="email"
                       name="email"
                       id="email"
                       placeholder=" "
                     />
-                    <svg class="icon-modal" width="18" height="18">
+                    <svg class="modal-form__icon" width="18" height="18">
                       <use
                         href="./images/symbol-defs.svg#icon-email-form"
                       ></use>
                     </svg>
                   </div>
 
-                  <div class="form-textarea">
-                    <label for="comment" class="form-label">Комментарий</label>
+                  <div class="modal-form__textarea">
+                    <label for="comment" class="modal-form__label"
+                      >Комментарий</label
+                    >
                     <textarea
-                      class="textarea-input"
+                      class="modal-form__textarea-input"
                       name="comment"
                       id="comment"
                       rows="8"
@@ -139,26 +141,26 @@
                     ></textarea>
                   </div>
 
-                  <div class="form-checkbox">
-                    <label class="checkbox-label">
+                  <div class="checkbox">
+                    <label class="checkbox__label">
                       <input
-                        class="checkbox-input"
+                        class="checkbox__input"
                         type="checkbox"
                         name="agree"
                         value="agreement"
                         id="agreement"
                       />
-                      <span class="checkbox-icon"></span>
-                      <span class="checkbox-span"
+                      <span class="checkbox__icon"></span>
+                      <span class="checkbox__span"
                         >Соглашаюсь с рассылкой и принимаю
-                        <a href="" class="checkbox-link"
+                        <a href="" class="checkbox__link"
                           >Условия договора</a
                         ></span
                       >
                     </label>
                   </div>
 
-                  <button type="submit" class="modal-form-button">
+                  <button type="submit" class="modal-form__button">
                     Отправить
                   </button>
                 </form>
