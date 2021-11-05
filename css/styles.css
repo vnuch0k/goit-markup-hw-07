@@ -552,26 +552,26 @@ nav {
 }
 
 /* directions list */
-.directions-list {
+.directions {
   color: var(--primary-text-color);
   display: flex;
 }
 
-.directions-list .item {
+.directions__item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 
-.directions-list .item:nth-child(3n) {
+.directions__item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.direction-thumb {
+.directions__thumb {
   position: relative;
   height: 294px;
 }
 
-.direction-description {
+.directions__description {
   position: absolute;
   bottom: 0;
   right: 0;
