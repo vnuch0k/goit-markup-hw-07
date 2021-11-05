@@ -614,11 +614,11 @@ nav {
 .section.team {
   background-color: #f5f4fa;
 }
-.members-list {
+.members {
   display: flex;
 }
 
-.members-list .item {
+.members__item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   background-color: var(--white-color);
@@ -627,12 +627,12 @@ nav {
   border-radius: 0px 0px 4px 4px;
 }
 
-.members-list .item:nth-child(4n) {
+.members__item:nth-child(4n) {
   margin-right: 0px;
 }
 
 /* member name */
-.member-name {
+.members__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -640,24 +640,24 @@ nav {
 }
 
 /* должности */
-.work-position {
+.members__work-position {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
 }
 
-.member-description {
+.members__description {
   text-align: center;
   padding: 30px 32px;
 }
 
-.member-socials {
+.socials {
   display: flex;
   justify-content: space-between;
 }
 
-.social-link .items {
+.socials__items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -669,12 +669,12 @@ nav {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.social-link .items:hover,
-.social-link .items:focus {
+.socials__items:hover,
+.socials__items:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
