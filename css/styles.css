@@ -871,7 +871,7 @@ nav {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-buttons .item:not(:last-child) {
+.portfolio-buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -895,7 +895,7 @@ nav {
   margin-bottom: 30px;
 }
 
-.card .link {
+.card__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -908,19 +908,19 @@ nav {
   margin-bottom: 0;
 }
 
-.card .link:hover,
-.card .link:focus {
+.card__link:hover,
+.card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-overlay {
+.card__overlay {
   position: relative;
   height: 294px;
   overflow: hidden;
 }
 
-.big-description {
+.card__description {
   position: absolute;
   top: 100%;
   left: 0;
@@ -935,19 +935,19 @@ nav {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card .link:hover .big-description,
-.card .link:focus .big-description {
+.card__link:hover .card__description,
+.card__link:focus .card__description {
   transform: translateY(-100%);
 }
 
-.project-description {
+.project {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.project-name {
+.project__name {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -958,7 +958,7 @@ nav {
 
 /* product type */
 
-.product-type {
+.project__type {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
