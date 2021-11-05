@@ -687,7 +687,7 @@ nav {
   margin-right: 30px;
 }
 
-.link-client {
+.client__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -700,12 +700,12 @@ nav {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-client {
+.client__logo {
   fill: currentColor;
 }
 
-.link-client:hover,
-.link-client:focus {
+.client__link:hover,
+.client__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
