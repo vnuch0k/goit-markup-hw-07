@@ -5,50 +5,52 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
 
-.hero__overlay {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/background-hero.jpeg);
-  background-size: cover;
-}
+  &__overlay {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-hero.jpeg);
+    background-size: cover;
+  }
 
-.hero__title {
-  color: $white-color;
-  font-size: 44px;
-  line-height: 1.36;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+  &__title {
+    color: $white-color;
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    color: $white-color;
+    background-color: $accent-color;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.87;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 10px 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .hero__button {
-  color: $white-color;
-  background-color: $accent-color;
-  border: none;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  line-height: 1.87;
-  cursor: pointer;
-  font-family: inherit;
-  border-radius: 4px;
-  padding: 10px 32px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__button:hover,
-.hero__button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .backdrop {
@@ -61,11 +63,11 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -84,8 +86,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.1);
+.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
 }
 
 .overlay-button {
@@ -111,7 +115,9 @@
   fill: currentColor;
 }
 
-.overlay-button:hover,
-.overlay-button:focus {
-  color: $accent-color;
+.overlay-button {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
