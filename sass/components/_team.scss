@@ -1,0 +1,69 @@
+/* section team */
+
+.section.team {
+  background-color: $secondary-background-color;
+}
+.members {
+  display: flex;
+}
+
+.members__item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.members__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/* member name */
+.members__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+/* должности */
+.members__work-position {
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.members__description {
+  text-align: center;
+  padding: 30px 32px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+.socials__items:hover,
+.socials__items:focus {
+  color: $white-color;
+  background-color: $accent-color;
+}
