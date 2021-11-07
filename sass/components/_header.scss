@@ -3,7 +3,7 @@
 .logo {
   color: $accent-color;
   text-decoration: none;
-  font-family: raleway, sans-serif;
+  font-family: $font-secondary, $font-fallback;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
